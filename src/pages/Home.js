@@ -74,7 +74,7 @@ const AiwithImage = () => {
       try {
         setLoadingText(true);
         const model2 = genAI.getGenerativeModel({ model: "gemini-pro" });
-        const prompt = `provide three precautionary measures to prevent "${aiResponse}" fish disease.`;
+        const prompt = `if "${aiResponse}" is \'Healthy fish\', then reply,\'No need to worry, Fish seems healthy.\', else, provide a precautionary measures to prevent "${aiResponse}" fish disease.`;
         const result = await model2.generateContent(prompt);
         const textResponse = await result.response;
         const text2 = textResponse.text();
@@ -126,7 +126,7 @@ const AiwithImage = () => {
             showResponse && healthFilter &&(
               aiResponse === "Healthy fish" ? (
               <button  onClick={() => finalClick()}>Get Cure</button>) : (
-              <button  onClick={() => finalClick()}>Get tips to keep the fish healthy</button>
+              <button  onClick={() => finalClick()}>Get Cure</button>
               )
             )
           }
