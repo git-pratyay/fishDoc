@@ -100,7 +100,7 @@ const AiwithImage = () => {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center'}}>
-      <h1 style={{color:'#333333', fontFamily: 'cursive'}}>FISH DOC</h1>
+      <h1 style={{color:'#333333', fontFamily: 'sans-serif'}}>FISH DOC</h1>
       <h4 style={{color:'#333333'}}>Generative AI Fish Disease Detector App! ❤️</h4>
       <div style={{display: 'flex',flexDirection: 'row', margin: '30px 0px', gap: '20px', alignItems: 'center', justifyContent: 'center', gap:'20px'}}>
       <p style={{fontSize: '20px',fontStyle: 'oblique',fontWeight: '600'}}>Enter image file that contains picture of fish to check for disease.</p>
